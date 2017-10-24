@@ -24,7 +24,7 @@ module SlackMathbot
         result = pods["Result"]
         puts result
 
-        send_message client, _data.channel, hash
+        send_message client, _data.channel, hash.to_s
 
       end
     end
