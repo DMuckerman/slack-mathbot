@@ -4,6 +4,9 @@ module SlackMathbot
       operator '!=' do |client, _data, _match|
         # original api key, donut steel
         Wolfram.appid = "R3KHQ2-2T2769PP4P"
+        
+        # Get equation part of argument
+        eq = _match[1..-1]
 
         # Get results from Wolfram Alpha
         result = Wolfram.fetch(eq[1])
