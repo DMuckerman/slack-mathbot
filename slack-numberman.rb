@@ -1,4 +1,5 @@
 require 'slack-ruby-bot'
 require 'wolfram'
-require 'slack-numberman/commands/calculate'
-require 'slack-numberman/app'
+require_relative 'slack-numberman/commands/calculate'
+require_relative 'slack-numberman/commands/dumpall'
+require_relative 'slack-numberman/app'
