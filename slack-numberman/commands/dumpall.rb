@@ -15,7 +15,7 @@ module SlackMathbot
         hash = Wolfram::HashPresenter.new(result).to_hash
 
         # Debug output hash
-        puts "```" + hash + "```"
+        puts hash
       
         # Breakdown hash
         pods = hash[:pods]
