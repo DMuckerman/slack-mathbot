@@ -54,6 +54,13 @@ module SlackMathbot
 			  if decimal != nil
 			    puts decimal
 			    send_message client, _data.channel, decimal[0]
+			  else
+			    decimal = pods["Decimal form"]
+
+			    if decimal != nil
+			      puts decimal
+			      send_message client, _data.channel, decimal[0]
+			    end
 			  end
 			end
           end
